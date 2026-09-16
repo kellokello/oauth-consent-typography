@@ -1,0 +1,37 @@
+/* Proposed colours for the OAuth consent screen, shown here for context.
+   This is a separate change that is already in review. */
+
+/* The base stylesheet never sets a page background, so the header area above
+   #wrap has only ever been white by virtue of the browser default. State it. */
+html, body {
+  background-color: #ffffff;
+}
+
+#wrap {
+  background-color: #ffffff;
+  border-color: #d8dcde;
+}
+
+html, body, div#wrap {
+  color: #2f3941;
+}
+
+#client-logo-wrapper img {
+  border-color: #d8dcde;
+}
+
+#authorization {
+  border-color: #d8dcde;
+}
+
+#user-logout a {
+  color: #1f73b7;
+}
+
+.deny input[type=submit] {
+  background-color: #d8dcde;
+}
+
+.approve input[type=submit] {
+  background-color: #1f73b7;
+}

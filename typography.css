@@ -1,0 +1,46 @@
+/* Proposed typography for the OAuth consent screen.
+   Loaded after base.css, which it overrides.
+
+   Collapses the five font sizes the screen accumulated over time
+   (12, 13, 15, 16 and 17px) down to three steps of the Zendesk Garden
+   scale -- 18px heading, 14px content, 12px secondary -- and to two
+   weights. The family is the system font stack Garden defines, which is
+   also what the sign-in page renders with. */
+
+html, body, div#wrap {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#client-name h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Base sets 15px, which would sit oddly above a 14px body. */
+#scopes {
+  font-size: 14px;
+}
+
+/* Base uses bold, which is 700. 600 matches the heading. */
+#scopes p {
+  font-weight: 600;
+}
+
+/* Base sets 13px on both. */
+.deny input[type=submit],
+.approve input[type=submit] {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Secondary: the client name with its company, and the "Not you?" line.
+   Base already had the first at 12px and the second at 13px. */
+#client-description {
+  font-size: 12px;
+}
+
+#user-logout {
+  font-size: 12px;
+}
